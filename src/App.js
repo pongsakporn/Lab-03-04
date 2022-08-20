@@ -10,6 +10,11 @@ function App() {
         <h2>"จงเขียนคำข้างล่างให้ถูกต้อง"</h2> 
             "คุณมีเวลา 10 secในการตอบ"
           <WordCard value = {word}/>
+         
+
+<p id="demo">  <h2>ต้องการคำใบ้ไหม</h2>.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = He_lo"'>คำใบ้</button>
           
   
       </div>

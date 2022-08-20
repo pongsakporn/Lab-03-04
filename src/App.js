@@ -1,12 +1,14 @@
 import './App.css';
 import WordCard from './WordCard';
+import countDown from './Timedown';
 const word = "kub";
 function App() {
     return (
       <div>
-        {
-          <WordCard value="kub"/>
-        }
+        
+          Timedown(15);
+          <WordCard value = {'kub'}/>
+  
       </div>
     );
 }

@@ -1,21 +1,21 @@
 import './App.css';
 import WordCard from './WordCard';
-
 const word = "Hello";
 
 function App() {
-  countDown(60);
+  
     return (
       
       <div>
-        
-        
-          <WordCard value = {'Hello'}/>
+        <h2>"จงเขียนคำข้างล่างให้ถูกต้อง"</h2> 
+            "คุณมีเวลา 10 secในการตอบ"
+          <WordCard value = {word}/>
           
   
       </div>
     );
-}
+   
+} countDown(10);
 function countDown(secs){
   
   let id =setTimeout(()=>{
@@ -24,7 +24,7 @@ function countDown(secs){
   
   if(secs ===0){
      clearTimeout(id);
-     console.log("หมดเวลา..");
+    document.write("หมดเวลา..");
   }else{
      console.log('+secs+')
   }
